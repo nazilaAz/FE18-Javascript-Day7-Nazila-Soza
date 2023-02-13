@@ -1,0 +1,23 @@
+@mixin Textbox-W($width) {
+    width: $width;
+}
+
+@mixin Textbox-H($height) {
+    height: $height;
+}
+
+@mixin alinkSize($linksize) {
+    font-size: $linksize;
+}
+
+@mixin alinkpadding($top, $linkpaddingsize) {
+    padding: $top $linkpaddingsize;
+}
+
+@mixin changeCols($col, $fr) {
+    grid-template-columns: repeat($col, $fr);
+}
+
+@mixin changeRows($row, $fr) {
+    grid-template-rows: repeat($row, $fr);
+}

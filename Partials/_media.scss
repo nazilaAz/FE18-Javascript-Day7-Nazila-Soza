@@ -1,0 +1,233 @@
+/*Desktop*/
+@media screen and (min-width: 769px) {
+    html {
+        font-size: 25px;
+    }
+
+    body#html {
+        background-color: $bc-body-color;
+
+        .search {
+            input[type="text"] {
+                @include Textbox-W(10rem);
+                @include Textbox-H(1rem);
+                background-color: $bc-body-color;
+                font-size: 1rem;
+            }
+        }
+
+        .navtopLink {
+            @include alinkSize(.8rem);
+            @include alinkpadding(0, 1.2rem);
+        }
+
+        .container {
+            margin: 0 auto;
+            font-size: .53rem;
+            font-weight: 300;
+            grid-template-columns: 30% 30% 30%;
+
+            @include changeRows(3, 1fr);
+            row-gap: 20px;
+        }
+
+        .imgContainer {
+            .img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+
+            }
+
+            div {
+                top: -1.5rem;
+            }
+        }
+
+        footer {
+            font-size: .5rem;
+            background-color: $bc-footer-color;
+            line-height: 2;
+        }
+    }
+
+
+    body#rcpBody {
+        background-color: $bc-mobile-nav-color;
+
+        h1 {
+            font-size: 1.5rem;
+        }
+
+        .rcpContainer {
+            grid-template-columns: auto auto;
+            grid-template-rows: auto auto;
+            row-gap: 10px;
+            margin-left: 2rem;
+            width: 90%
+
+           /*  .imgAside {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            } */
+        }
+    }
+}
+
+
+/* Tablet*/
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    html {
+        font-size: 24px;
+    }
+
+    body#html {
+        background-color: $bc-body-color;
+
+        .search {
+            input[type="text"] {
+                @include Textbox-W(10rem);
+                @include Textbox-H(1rem);
+                background-color: $bc-body-color;
+                font-size: 1rem;
+            }
+        }
+
+        .navtopLink {
+            @include alinkSize(.5rem);
+            @include alinkpadding(0, .4rem);
+        }
+
+        .container {
+            font-size: .53rem;
+            font-weight: 300;
+            // grid-template-columns: 30% 30% 30%;
+            grid-template-columns: auto auto;
+            // @include changeRows(3, 1fr);
+            row-gap: 20px;
+        }
+
+        .imgContainer {
+            .img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+
+            }
+
+            div {
+                top: -1.5rem;
+            }
+        }
+
+        footer {
+            font-size: .5rem;
+            background-color: $bc-footer-color;
+            line-height: 2;
+        }
+    }
+
+    body#rcpBody {
+        background-color: $bc-mobile-nav-color;
+        font-size: .8rem;
+
+        h1 {
+            font-size: .9rem;
+        }
+
+        .rcpContainer {
+            grid-template-columns: auto auto;
+            grid-template-rows:auto auto;
+            margin-left: .6rem;
+            margin-right: .6rem;
+             
+
+            .imgAside {
+                width: 60vw;
+                height: 60vw;
+                object-fit: cover;
+            }
+        }
+    }
+
+}
+
+
+/* Mobile*/
+@media screen and (min-width: 320px) and (max-width: 480px) {
+    html {
+        font-size: 16px;
+    }
+
+    body#html {
+        background-color: $bc-mobile-body-color;
+
+
+        .search {
+            input[type="text"] {
+                @include Textbox-W(12rem);
+                @include Textbox-H(2rem);
+                background-color: $bc-mobile-body-color;
+            }
+        }
+
+        .navtopLink {
+            @include alinkSize(.8rem);
+            @include alinkpadding(0, .2rem);
+        }
+
+        .container {
+            font-size: .9rem;
+            font-weight: 300;
+
+            grid-template-columns: 1fr;
+            @include changeRows(3, 1fr);
+            row-gap: 20px;
+
+        }
+
+        .imgContainer {
+            .img {
+                width: 90vw;
+                height: 100%;
+                object-fit: cover;
+
+            }
+
+            div {
+                top: -2.5rem;
+                width: 90vw;
+                margin: 0 auto;
+            }
+        }
+
+        footer {
+            font-size: .8rem;
+            background-color: $bc-mobile-footer-color;
+        }
+    }
+
+    body#rcpBody {
+        background-color: $bc-mobile-nav-color;
+
+        h1 {
+            font-size: .9rem;
+        }
+
+        .rcpContainer {
+            grid-template-columns:auto auto;
+            grid-template-rows: auto auto;
+            margin-left: .6rem;
+            margin-right: .6rem;
+             
+
+            .imgAside {
+                width: 50vw;
+                height: 50vw;
+                object-fit: cover;
+            }
+
+        }
+    }
+}

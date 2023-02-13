@@ -1,0 +1,27 @@
+footer{
+    margin-top: .8rem;
+    height: 2.8rem;
+    // font-size: .8rem;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+  
+
+}
+
+.footerTop{
+    a{
+        text-decoration: none;
+        color: white;
+    }
+}
+.footerbottom{
+    font-size: smaller;
+    span {
+        content: "\00A9";
+    }
+}
+.footercenter{
+    color: wheat;
+    z-index: 2;
+}

@@ -1,0 +1,26 @@
+header{
+    margin-top: .5rem;
+    display: flex;
+    position: relative;
+}
+div.logo {
+    p {
+        margin: .2rem 2.5rem;
+        font-weight: 700;
+    }
+}
+
+div.search {
+   /* margin: .2rem .5rem;*/
+    justify-content: flex-end;
+    position: absolute;
+    right: 2.8rem;
+    
+   
+    #txtSearch {
+        font-family: 'Dancing Script', cursive;
+        text-align: right;
+        font-weight: 700;
+        border: none;
+    }
+}

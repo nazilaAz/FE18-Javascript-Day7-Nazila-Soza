@@ -1,0 +1,101 @@
+body#html {
+    font-family: 'Dancing Script', cursive;
+    margin: 0;
+    padding: 0;
+    background: #000;
+    color: #000;
+    .swiper {
+        width: 100%;
+        height: 15rem;
+        margin-left: auto;
+        margin-right: auto;
+        .swiper-wrapper {
+            position: relative;
+            width: 100%;
+            height: 15rem;
+            z-index: 1;
+            display: flex;
+            transition-property: transform;
+            box-sizing: content-box;
+        }
+        .swiper-slide {
+            text-align: center;
+            font-size: 18px;
+            background: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-size: cover;
+            background-position: center;
+            img {
+                display: block;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+    .mySwiper {
+        height: 20%;
+        box-sizing: border-box;
+        padding: 10px 0;
+        .swiper-slide {
+            width: 25%;
+            height: 100%;
+            opacity: 0.4;
+        }
+        .swiper-slide-thumb-active {
+            opacity: 1;
+        }
+    }
+    .mySwiper2 {
+        height: 80%;
+        width: 100%;
+    }
+    .container {
+        width: 93vw;
+        font-family: 'Roboto Slab', serif;
+        display: grid;
+        .imgContainer {
+            text-align: center;
+            padding-left: .9rem;
+            /*  .img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+   
+        } */
+            div {
+                background-color: rgba(41, 40, 40, 0.3);
+                position: relative;
+                /*  top: -1.5rem; */
+                font-weight: 600;
+            }
+        }
+    }
+}
+
+body#rcpBody {
+    font-family: 'Lobster Two', cursive;
+    .hdrRecipe {
+        text-align: center;
+        margin: 0 auto;
+    }
+    .rcpContainer {
+        background-color: #fff;
+        border: thick double #FCF9C6;
+        // margin: .5rem 2rem;
+        display: grid;
+        ul {
+            li {
+                list-style: none;
+            }
+        }
+        .content {
+            grid-area: 2/2/2/3;
+        }
+        .contentIng {
+            padding: 1rem;
+        }
+    }
+}
